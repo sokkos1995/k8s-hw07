@@ -1,0 +1,15 @@
+frontend:
+  replicas: 1
+  image:
+    repository: nginx
+    tag: "1.27.5"
+  service:
+    port: 80
+
+backend:
+  replicas: 1
+  image:
+    repository: wbitt/network-multitool
+    tag: latest
+  service:
+    port: 8080
